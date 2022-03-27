@@ -33,7 +33,13 @@ body {
   width: 350px;
 }
 
-
+@media only screen and (min-width:) {
+    .container {
+        width: 330px;
+        height: 545px;
+        margin: 60px 24px;
+    }
+}
 .main__image {
   border-radius: 10px;
   margin: 24px;
@@ -42,17 +48,16 @@ body {
   z-index: 4;
 }
 .main__image:hover {
-    background-image: url("images/image-equilibrium.jpg");
-    background-size: cover;
-    
+  background-image: url("images/image-equilibrium.jpg");
+  background-size: cover;
 }
 .main__image:hover {
-    background-blend-mode:screen;
-    background-color: hsl(215, 51%, 70%);
-    content: url("images/icon-view.svg");
-    cursor: pointer;
-    padding: 127.5px;
-    width: 45px;
+  background-blend-mode: screen;
+  background-color: hsl(215, 51%, 70%);
+  content: url("images/icon-view.svg");
+  cursor: pointer;
+  padding: 127.5px;
+  width: 45px;
 }
 
 .title {
@@ -119,6 +124,7 @@ hr {
   cursor: pointer;
 }
 .attribution {
+  bottom: 0;
   font-size: 11px;
   position: fixed;
   text-align: center;
