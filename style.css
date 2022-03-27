@@ -1,42 +1,58 @@
 :root {
-  --primary-soft-blue: hsl(215, 51%, 70%);
-  --primary-cyan: hsl(178, 100%, 50%);
-  --netural-very-dark-blue-main: hsl(217, 54%, 11%);
+  --image-width: 300px;
   --netural-very-dark-blue-card: hsl(216, 50%, 16%);
   --netural-very-dark-blue-line: hsl(215, 32%, 27%);
+  --netural-very-dark-blue-main: hsl(217, 54%, 11%);
   --netural-white: hsl(0, 0%, 100%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --primary-soft-blue: hsl(215, 51%, 70%);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&display=swap");
 
 body {
-  font-size: 15px;
   background-color: var(--netural-very-dark-blue-main);
-  font-family: "Nunito Sans", sans-serif;
   color: var(--primary-soft-blue);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 15px;
 }
 
 .container {
-  width: 350px;
-  height: 600px;
+  -ms-transform: translate(-50%, -50%);
+  align-items: center;
   background-color: var(--netural-very-dark-blue-card);
   border-radius: 10px;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0px 0px 13px 21px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: flexbox;
+  height: 600px;
+  justify-content: center;
   left: 50%;
+  position: fixed;
   top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
 }
 
+
 .main__image {
-  width: 300px;
-  height: auto;
   border-radius: 10px;
   margin: 24px;
+  position: relative;
+  width: 300px;
+  z-index: 4;
+}
+.main__image:hover {
+    background-image: url("images/image-equilibrium.jpg");
+    background-size: cover;
+    
+}
+.main__image:hover {
+    background-blend-mode:screen;
+    background-color: hsl(215, 51%, 70%);
+    content: url("images/icon-view.svg");
+    cursor: pointer;
+    padding: 127.5px;
+    width: 45px;
 }
 
 .title {
@@ -45,14 +61,19 @@ body {
   margin-top: 0;
 }
 
+.title:hover {
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
+
 .text {
-  margin: 24px;
   font-weight: 400;
+  margin: 24px;
 }
 
 .badges {
-  margin: 24px;
   font-weight: 300;
+  margin: 24px;
   padding-bottom: 24px;
 }
 
@@ -66,34 +87,37 @@ body {
 }
 
 hr {
-  border: 0.5px solid var(--netural-very-dark-blue-line);
-  width: 300px;
-  opacity: 0.5;
-  margin: 24px;
   border-radius: 50px;
+  border: 0.5px solid var(--netural-very-dark-blue-line);
+  margin: 24px;
+  opacity: 0.5;
+  width: 300px;
 }
 .creation {
   display: inline-flex;
   flex-direction: row;
 }
 .avatar {
-  margin: 24px;
-  margin-top: 0;
-  width: 24px;
-  border: var(--netural-white) solid 1px;
   border-radius: 50px;
+  border: var(--netural-white) solid 1px;
+  margin-top: 0;
+  margin: 24px;
+  width: 24px;
 }
 
 .creation__text {
-  margin-top: 7px;
   margin-left: 0;
+  margin-top: 7px;
 }
 .creator__name {
   color: var(--netural-white);
 }
 
+.creator__name:hover {
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
 .attribution {
-  bottom: -0;
   font-size: 11px;
   position: fixed;
   text-align: center;
