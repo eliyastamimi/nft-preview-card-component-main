@@ -1,0 +1,105 @@
+:root {
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --netural-very-dark-blue-main: hsl(217, 54%, 11%);
+  --netural-very-dark-blue-card: hsl(216, 50%, 16%);
+  --netural-very-dark-blue-line: hsl(215, 32%, 27%);
+  --netural-white: hsl(0, 0%, 100%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&display=swap");
+
+body {
+  font-size: 15px;
+  background-color: var(--netural-very-dark-blue-main);
+  font-family: "Nunito Sans", sans-serif;
+  color: var(--primary-soft-blue);
+}
+
+.container {
+  width: 350px;
+  height: 600px;
+  background-color: var(--netural-very-dark-blue-card);
+  border-radius: 10px;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 13px 21px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.main__image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 24px;
+}
+
+.title {
+  color: var(--netural-white);
+  margin: 24px;
+  margin-top: 0;
+}
+
+.text {
+  margin: 24px;
+  font-weight: 400;
+}
+
+.badges {
+  margin: 24px;
+  font-weight: 300;
+  padding-bottom: 24px;
+}
+
+.price__badge {
+  color: var(--primary-cyan);
+  float: left;
+}
+
+.time__left {
+  float: right;
+}
+
+hr {
+  border: 0.5px solid var(--netural-very-dark-blue-line);
+  width: 300px;
+  opacity: 0.5;
+  margin: 24px;
+  border-radius: 50px;
+}
+.creation {
+  display: inline-flex;
+  flex-direction: row;
+}
+.avatar {
+  margin: 24px;
+  margin-top: 0;
+  width: 24px;
+  border: var(--netural-white) solid 1px;
+  border-radius: 50px;
+}
+
+.creation__text {
+  margin-top: 7px;
+  margin-left: 0;
+}
+.creator__name {
+  color: var(--netural-white);
+}
+
+.attribution {
+  bottom: -0;
+  font-size: 11px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
